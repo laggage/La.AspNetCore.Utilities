@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "La.AspNetCore.Extensions.Pa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "La.AspNetCore.Extensions.Test", "src\tests\La.AspNetCore.Extensions.Test\La.AspNetCore.Extensions.Test.csproj", "{69167759-FF69-41F4-9A5D-395C45E1D5E6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7ABA484-D220-4B1D-9DF3-CC490ABB6B57}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

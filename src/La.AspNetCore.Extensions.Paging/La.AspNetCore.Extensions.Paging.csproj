@@ -6,9 +6,10 @@
   
   <PropertyGroup>
     <PackageId>La.ApsNetCore.Extensions.Paging</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>laggage</Authors>
     <Title>La.ApsNetCore.Extensions.Paging</Title>
     <Description>简单的对集合进行分页的相关扩展方法</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 </Project>
