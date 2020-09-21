@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "La.AspNetCore.Extensions.Paging", "src\La.AspNetCore.Extensions.Paging\La.AspNetCore.Extensions.Paging.csproj", "{CC407EB7-B5C3-4C21-90A4-BDABE3920A17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "La.AspNetCore.Extensions.Test", "src\tests\La.AspNetCore.Extensions.Test\La.AspNetCore.Extensions.Test.csproj", "{69167759-FF69-41F4-9A5D-395C45E1D5E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC407EB7-B5C3-4C21-90A4-BDABE3920A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC407EB7-B5C3-4C21-90A4-BDABE3920A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC407EB7-B5C3-4C21-90A4-BDABE3920A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC407EB7-B5C3-4C21-90A4-BDABE3920A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69167759-FF69-41F4-9A5D-395C45E1D5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69167759-FF69-41F4-9A5D-395C45E1D5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69167759-FF69-41F4-9A5D-395C45E1D5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69167759-FF69-41F4-9A5D-395C45E1D5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD48AEED-A7CE-4CA7-A4DB-EA8A75F6B9EE}
+	EndGlobalSection
+EndGlobal

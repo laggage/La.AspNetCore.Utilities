@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageId>La.ApsNetCore.Extensions.Paging</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>laggage</Authors>
+    <Title>La.ApsNetCore.Extensions.Paging</Title>
+    <Description>简单的对集合进行分页的相关扩展方法</Description>
+  </PropertyGroup>
+</Project>
