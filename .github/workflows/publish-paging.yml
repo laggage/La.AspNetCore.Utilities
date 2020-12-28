@@ -1,9 +1,8 @@
-﻿name: publish-paging-efcore
-
+﻿name: publish-paging
 on:
   push:
     tags:
-      - '^paging-v\d\.\d\.\d'
+      - paging-v**
 
 jobs:
   build-publish:
