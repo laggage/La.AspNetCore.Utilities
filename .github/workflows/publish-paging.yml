@@ -15,8 +15,6 @@ jobs:
         with:
           dotnet-version: 5.0.100
       - name: Build-Pack
-        run: cd src/La.AspNetCore.Extensions.Paging & \
-             dotnet pack -c Release
+        run: dotnet pack -c Release src/La.AspNetCore.Extensions.Paging/La.AspNetCore.Extensions.Paging.csproj
       - name: Pubilsh to baget
-        run: cd src/La.AspNetCore.Extensions.Paging/bin/Release & \
-            dotnet nuget push -s https://baget.laggage.top/v3/index.json .\ -k ${{ secrets.BAGET_KEY }}
+        run: dotnet nuget push src/La.AspNetCore.Extensions.Paging/bin/Release/*.nupkg -s https://baget.laggage.top/v3/index.json -k ${{ secrets.BAGET_KEY }}
