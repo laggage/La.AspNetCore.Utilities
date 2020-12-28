@@ -19,4 +19,4 @@ jobs:
              dotnet pack -c Release
       - name: Pubilsh to baget
         run: cd src/La.AspNetCore.Extensions.Paging/bin/Release & \
-            dotnet nuget push -s https://baget.laggage.top/v3/index.json .\ -k ${{BAGET_KEY}}
+            dotnet nuget push -s https://baget.laggage.top/v3/index.json .\ -k ${{ secrets.BAGET_KEY }}
