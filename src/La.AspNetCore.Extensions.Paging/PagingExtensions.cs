@@ -41,7 +41,7 @@ namespace La.AspNetCore.Extensions.Paging
             where T : class
         {
             source = source ?? throw new ArgumentNullException(nameof(source));
-            totalItemsCount = totalItemsCount ?? source.Count();
+            totalItemsCount ??= source.Count();
             var data = source.Skip((pageIndex - 1) * pageSize)
                 .Take(pageSize)
                 .ToList();
