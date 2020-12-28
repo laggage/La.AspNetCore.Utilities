@@ -5,7 +5,7 @@ namespace La.AspNetCore.Extensions.Paging
     public class PageModel<T> : PageModel
         where T : class
     {
-        public List<T> Items { get; set; }
+        public List<T> Items { get; }
 
         public int ItemsCount => Items.Count;
 
