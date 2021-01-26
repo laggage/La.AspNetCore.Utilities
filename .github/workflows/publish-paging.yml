@@ -15,8 +15,19 @@ jobs:
         with:
           dotnet-version: 5.0.100
       - name: Build-Pack
-        run: dotnet pack -c Release src/La.AspNetCore.Extensions.Paging/La.AspNetCore.Extensions.Paging.csproj & /
-             dotnet pack -c Release src/La.AspNetCore.Extensions.Paging.EFCore/La.AspNetCore.Extensions.Paging.EFCore.csproj
+        run: dotnet pack -c Release src/La.AspNetCore.Extensions.Paging/La.AspNetCore.Extensions.Paging.csproj 
       - name: Pubilsh to baget
-        run: dotnet nuget push src/La.AspNetCore.Extensions.Paging/bin/Release/*.nupkg -s https://baget.laggage.top/v3/index.json -k ${{ secrets.BAGET_KEY }} & /
-             dotnet nuget push src/La.AspNetCore.Extensions.Paging.EFCore/bin/Release/*.nupkg -s https://baget.laggage.top/v3/index.json
+        run: dotnet nuget push src/La.AspNetCore.Extensions.Paging/bin/Release/*.nupkg -s https://baget.laggage.top/v3/index.json -k ${{ secrets.BAGET_KEY }}
+  build-publish-paging-efcore:
+    name: publish Paging-EFCore
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.100
+      - name: Build-Pack-EFCore
+        run: dotnet pack -c Release src/La.AspNetCore.Extensions.Paging.EFCore/La.AspNetCore.Extensions.Paging.EFCore.csproj
+      - name: Pubilsh to baget
+        run: dotnet nuget push src/La.AspNetCore.Extensions.Paging.EFCore/bin/Release/*.nupkg -s https://baget.laggage.top/v3/index.json -k ${{ secrets.BAGET_KEY }}
