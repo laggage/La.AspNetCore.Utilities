@@ -48,5 +48,13 @@ namespace La.AspNetCore.Extensions.Paging
             return new PageModel<T>(
                 pageIndex, pageSize, totalItemsCount.Value, data);
         }
+
+        public static PageModel<T> Page<T>(
+            this IEnumerable<T> source,
+            PaginationQueryParams queryParams)
+            where T : class
+        {
+            return source.Page(queryParams.PageIndex, queryParams.PageSize);
+        }
     }
 }
