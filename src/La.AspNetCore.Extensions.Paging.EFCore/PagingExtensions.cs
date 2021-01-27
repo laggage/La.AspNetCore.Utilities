@@ -10,7 +10,7 @@ namespace La.AspNetCore.Extensions.Paging
 {
     public static class PagingExtensions
     {
-        public static Task<PageModel> PageAsync<T>(
+        public static Task<PageModel<T>> PageAsync<T>(
             this IQueryable<T> source,
             int pageIndex)
             where T : class
@@ -18,7 +18,7 @@ namespace La.AspNetCore.Extensions.Paging
             return source.PageAsync(pageIndex, PageModel.DefaultPageSize);
         }
         
-        public static async Task<PageModel> PageAsync<T>(
+        public static async Task<PageModel<T>> PageAsync<T>(
             this IQueryable<T> source,
             int pageIndex,
             int pageSize)
@@ -33,7 +33,7 @@ namespace La.AspNetCore.Extensions.Paging
                 pageIndex, pageSize, totalItemsCount, data);
         }
 
-        public static Task<PageModel> PageAsync<T>(
+        public static Task<PageModel<T>> PageAsync<T>(
             this IQueryable<T> source,
             PaginationQueryParams queryParams)
             where T : class
